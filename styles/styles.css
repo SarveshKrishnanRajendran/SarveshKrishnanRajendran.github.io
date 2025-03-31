@@ -804,19 +804,29 @@ section {
   }
 
   .contact-item {
-    flex-direction: column;
-    margin: 1rem 0;
-  }
-  .contact-item p {
-    font-size: 15px;
-    color: var(--color-grey-2);
-  }
+    display: flex;
+    align-items: flex-start;
+    margin: 0.6rem 0;
+    flex-wrap: wrap;
+}
+.contact-item p {
+  flex: 1;
+  margin: 0;
+  word-break: break-word;
+  font-size: 0.95rem;
+}
   .contact-item span {
     font-size: 15px;
   }
   .contact-item .icon {
-    grid-template-columns: 25px 1fr;
-  }
+    width: 140px;
+    min-width: 140px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white-color);
+}
 
   .main-title h2 {
     font-size: 2rem;
@@ -959,6 +969,73 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
+}
+/* Improved hover card styling for project section */
+.hover-items {
+  background-color: #38b000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hover-items h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.hover-items p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.hover-items .icons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.hover-items .icon {
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.hover-items .icon:hover {
+  transform: scale(1.1);
+}
+.single-column-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.center-about {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.center-about h4 {
+  text-align: center;
+}
+
+.center-about p {
+  text-align: center;
+  line-height: 1.8;
 }
 
 /*# sourceMappingURL=styles.css.map */
